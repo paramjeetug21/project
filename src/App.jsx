@@ -6,7 +6,6 @@ function App() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Generate a new scene ID and redirect
     const sceneId = uuidv4();
     navigate(`/canvas/${sceneId}`);
   }, [navigate]);
